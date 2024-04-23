@@ -19,11 +19,20 @@ close.addEventListener('click', function (){
 
 // get data from file json
 fetch('product.json')
-    .then(response => response.json())
+    .then(response => {
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
     .then(data => {
+        console.log('Data fetched successfully:', data);
         products = data;
         // addDataToHTML();
-})
+    })
+    .catch(error => {
+        console.error('There was a problem with the fetch operation:', error);
+    });
 
 
 
@@ -68,6 +77,7 @@ checkCart();
 
 
 function addCart($idProduct){
+    console.log($idProduct);
     let productsCopy = JSON.parse(JSON.stringify(products));
     //// If this product is not in the cart
     if(!listCart[$idProduct]) 
