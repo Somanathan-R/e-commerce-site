@@ -41,3 +41,13 @@ function addCartToHTML(){
     totalQuantityHTML.innerText = totalQuantity;
     totalPriceHTML.innerText = '$' + totalPrice;
 }
+
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "block";
+    
+    // Close the popup after 2 seconds
+    setTimeout(function() {
+      popup.style.display = "none";
+    }, 2000);
+}  
