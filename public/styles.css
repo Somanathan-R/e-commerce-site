@@ -149,8 +149,8 @@ h4 {
   padding: 1rem 4rem;
   border: 2px solid var(--default-color);
   border-radius: 4rem;
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 800;
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
 }
@@ -218,6 +218,7 @@ h4 {
   padding: 5rem 0;
 }
 
+
 .arrivals {
   padding: 2rem 0;
 }
@@ -231,6 +232,7 @@ h4 {
   font-size: 4rem;
   display: inline-block;
   position: relative;
+  color: white;
 }
 
 .primary__title::after {
@@ -303,6 +305,7 @@ h4 {
 
 .product__bottom h3 {
   margin-bottom: 1rem;
+  color: white;
 }
 
 .product__bottom a:link,
@@ -316,11 +319,16 @@ h4 {
 }
 .product button{
   display: inline-block;
-  padding: 0.8rem 4rem;
+  /* padding: 0.8rem 4rem;
   background-color: var(--default-color);
-  color: var(--grey-color);
+  color: var(--grey-color); */
   text-transform: uppercase;
   font-weight: 500;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px; 
 }
 
 @media only screen and (max-width: 567px) {
