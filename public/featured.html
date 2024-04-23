@@ -23,9 +23,13 @@
           <div class="container">
             <nav class="nav__center">
               <div class="nav__header">
-                <div class="nav__logo">
+                <!-- <div class="nav__logo">
                   <h1>SHOP.<span>IN</span></h1>
-                </div>
+                </div> -->
+                <a href="index.html" class="nav__logo">
+                  <h1>SHOP.<span>IN</span></h1>
+                </a>
+                
     
                 <div class="nav__hamburger">
                   <span>
@@ -51,7 +55,7 @@
                   </li>
     
                   <li class="nav__item">
-                    <a href="featured.html" target="_blank" >Featured</a>
+                    <a href="featured.html" target="_blank" class="nav__link">Featured</a>
                   </li>
     
                   <li class="nav__item">
@@ -63,11 +67,11 @@
                   </li>
     
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Login</a>
+                    <a href="/login" class="nav__link">Login</a>
                   </li>
     
                   <li class="nav__item">
-                    <a href="#" class="nav__link">Register</a>
+                    <a href="/signup" class="nav__link">Register</a>
                   </li>
                 </ul>
     
@@ -78,18 +82,24 @@
                     </svg>
                   </a>
     
-                  <a href="#" class="icon__item">
+                  <a href="info.html" class="icon__item">
                     <svg>
                       <use xlink:href="./images/sprite.svg#icon-user"></use>
                     </svg>
                   </a>
     
-                  <a href="#" class="icon__item">
+                  <!-- <a href="#" class="icon__item">
                     <svg>
                       <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
                     </svg>
                     <span>2</span>
-                  </a>
+                  </a> -->
+                  <button type="button" class="icon__item iconCart">
+                    <svg>
+                      <use xlink:href="./images/sprite.svg#icon-shopping-basket"></use>
+                    </svg>
+                    <span>2</span>
+                  </button>
                 </ul>
               </div>
             </nav>
@@ -461,6 +471,7 @@
     <!-- Custom Script -->
     <script src="./js/slider.js"></script>
     <script src="./js/index.js"></script>
+    <script src="app.js"></script>
   
 </body>
 </html>
