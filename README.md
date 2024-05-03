@@ -1,1 +1,1 @@
-Mini Project for WebDesign and Development
+Mini Project for Web Design and Development
